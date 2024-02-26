@@ -100,6 +100,43 @@ nav ul li a {
   }
 }
 
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 450px;
+  background-image: url(https://unsplash.it/900/450/?blur);
+  background-color: #333333;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    top: -100px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.banner .heading {
+  flex: 1;
+  justify-self: center;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+
+  position: relative;
+  animation: appear 1s ease-in-out 0s forwards;
+}
+
+.banner .header small {
+  font-size: 24px;
+}
+
 .footer {
   position: absolute;
   left: 0;
